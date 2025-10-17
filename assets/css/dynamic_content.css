@@ -1,0 +1,42 @@
+/* Device Breakpoint Sizes */
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    #doormat {
+        padding: 20px 0px;
+    }
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .desktop-only {
+        display: none;
+    }
+    #doormat {
+        padding: 8px 0px;
+    }
+}
+
+/* TV */
+@media (min-width: 1201px) {
+    .mobile-only {
+        display: none;
+    }
+}
