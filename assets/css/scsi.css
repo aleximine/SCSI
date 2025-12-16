@@ -1,0 +1,281 @@
+/* Lore Document Stylesheet */
+body {
+  background-color: #17201B;
+  color: #57FED2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  /*overflow-x: hidden;*/
+}
+
+.separator {
+  border-color: #57FED2;
+  border-radius: 0;
+  border-style: none none dashed none;
+  border-width: 2px;
+  margin-bottom: 6px;
+}
+
+.separator::after {
+  content: "";
+  width: inherit;
+  display: block;
+  padding: 3px;
+  border-color: #57FED2;
+  border-radius: 0;
+  border-style: none none dashed none;
+  border-width: 2px;
+  margin-bottom: 6px;
+}
+
+/* header {} */
+
+footer {
+  clear: both;
+}
+
+h1 {
+  font-size: large;
+  font-weight: normal;
+  line-height: 2;
+  white-space: nowrap; 
+}
+
+h2 {
+  font-size: large;
+  font-weight: normal;
+  /* line-height: 1; */
+  /* margin-top: 16px; */
+  margin-bottom: 8px; 
+  /* padding-top: 8px; */
+  clear:left;
+}
+
+p {
+  font-size: medium;
+  margin-inline-start: 16px;
+  margin-inline-end: 16px;
+  white-space: pre-line;
+}
+
+h2 + p {
+  margin-top: 0; 
+}
+
+article {
+  padding: 4px;
+  /*border: 4px;*/
+}
+
+/* unvisited link */
+a:link {
+    color: #3ad5ff;
+}
+  
+/* visited link */
+ a:visited {
+    color: #57FED2;
+}
+
+pre {
+  text-wrap-mode: wrap;
+  /* font-size: normal; */
+}
+
+/* Typed Text */
+.typed {
+  overflow: hidden; /* Hides content until animation plays */
+  /*white-space: pre;*/
+  animation: typing 0.5s steps(var(--txtLen, 40), end);
+}
+
+
+/*Animations*/
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* Fade-In Animation */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 100% }
+}
+
+
+
+/* Navigation */
+/* Top navigation */
+
+/* Add a background color to the top navigation */
+header #topnav {
+  margin-left: -8px;
+  background-color: #3ad5ff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the links inside the navigation bar */
+header #topnav a {
+  color: #212121;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10pt;
+  transition: padding .5s;
+}
+
+/* Add a color to the active/current link */
+header #topnav > .active {
+  background-color: #008282;
+  color: #F9F5FF;
+}
+  
+/* Change the color of links on hover */
+header #topnav > a:hover {
+  background-color: #bbf0ff;
+  color: #212121;
+  padding: 14px 24px;
+}
+
+
+/*Flexboxes*/
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+}
+
+.flexbox-bar article,
+.flexbox article {
+  border-color: #57FED2;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 4px;
+}
+
+/*Remove excess border from text elements*/
+.flexbox article :first-child {
+  margin-top: 0;
+}
+
+.flexbox article :last-child {
+  margin-bottom: 0;
+}
+
+.flexbox-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.flexbox-bar * {
+  width: max-content;
+}
+
+
+
+
+/* CRT Shader */
+body {
+  text-shadow: 2px 0 1px rgba(0,30,255,0.5), -2px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+}
+
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+body::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* Text Styles */
+.obfuscated {
+  text-shadow: 0 0 5px #57FED2, 0 0 5px #57FED2, 0 0 10px #57FED2, 0 0 10px #57FED2;
+  color: #FFFFFF00;
+  /*z-index: 1;*/
+  user-select: none;
+}
+
+.narrated {
+  text-shadow: 0 0 5px #8f0000;
+  color: #fe5757;
+}
+
+.violent:hover {
+  text-shadow: 0 0 4px #8f0000, 0 0 4px #8f0000, 0 0 3px #8f0000, 0 0 2px #8f0000;
+}
+
+.obfuscated.narrated {
+  text-shadow: 0 0 5px #fe5757, 0 0 5px #fe5757, 0 0 10px #fe5757, 0 0 10px #fe5757;
+  color: #FFFFFF00;
+  user-select: unset;
+}
+
+.stat-sheet {
+  float: left;
+  padding: 8px;
+  border-color: #57FED2;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 8px;
+  margin-right: 16px;
+  width: fit-content;
+}
+
+
+/*Image Styles*/
+.profile-img,
+img {
+  padding: 8px;
+  border-color: #57FED2;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 8px;
+  margin-right: 16px;
+  width: fit-content;
+}
+
+.profile-img {
+  /* float: left; */
+  height: 270px;
+}
