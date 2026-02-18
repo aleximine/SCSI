@@ -20,17 +20,25 @@
         display: none;
     }
     #doormat {
-        padding: 20px 0px;
+        padding: 20px 0;
+    }
+    
+    .flexbox article * {
+      font-size: small;
     }
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .desktop-only {
         display: none;
     }
     #doormat {
-        padding: 8px 0px;
+        padding: 8px 0;
+    }
+    
+    .flexbox article * {
+      font-size: small;
     }
 }
 
