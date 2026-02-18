@@ -1,4 +1,4 @@
-/* Lore Document Stylesheet */
+/* MintyFreshFluffy's Lore Document Stylesheet */
 body {
   background-color: #17201B;
   color: #57FED2;
@@ -37,7 +37,7 @@ h1 {
   font-size: large;
   font-weight: normal;
   line-height: 2;
-  white-space: nowrap;
+  white-space: nowrap; 
 }
 
 h2 {
@@ -166,7 +166,6 @@ header #topnav > a:hover {
   border-width: 1px;
   border-style: solid;
   margin: 4px;
-  flex-grow: 1;
 }
 
 /*Remove excess border from text elements*/
@@ -274,20 +273,9 @@ img {
   margin: 8px;
   margin-right: 16px;
   width: fit-content;
-  max-width: 90%;
-  max-height: 500px;
 }
 
 .profile-img {
   /* float: left; */
   height: 270px;
-}
-
-.logo {
-  padding: 0px;
-  border-style: none;
-  margin: 0px;
-  margin-right: 4px;
-  width: 40px;
-  float:left;
 }
