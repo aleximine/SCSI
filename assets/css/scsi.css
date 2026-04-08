@@ -237,7 +237,7 @@ body::after {
 
 .narrated {
   text-shadow: 0 0 5px #8f0000;
-  color: #fe5757;
+  color: #fe5757 !important;
 }
 
 .violent:hover {
