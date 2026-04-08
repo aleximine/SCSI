@@ -240,6 +240,11 @@ body::after {
   color: #fe5757 !important;
 }
 
+.thirdparty {
+  /* text-shadow: 0 0 5px Orange; */
+  color: Orange !important;
+}
+
 .violent:hover {
   text-shadow: 0 0 4px #8f0000, 0 0 4px #8f0000, 0 0 3px #8f0000, 0 0 2px #8f0000;
 }
