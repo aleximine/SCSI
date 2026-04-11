@@ -2,7 +2,7 @@
 html {
   min-height: 100vh;
   background-color: #CADEED;
-  background-image: url(../media/clouds.jpg);
+  background-image: url(../img/clouds.jpg);
   background-blend-mode: overlay;
   background-repeat: repeat;
   background-position: bottom center; /* Centers horizontally at the bottom */
@@ -77,14 +77,14 @@ article {
 }
 
 /* unvisited link */
-a:link {
+/* a:link { */
     /*color: #3ad5ff;*/
-}
+/* } */
   
 /* visited link */
- a:visited {
+ /* a:visited { */
     /*color: #57FED2;*/
-}
+/* } */
 
 pre {
   text-wrap-mode: wrap;
