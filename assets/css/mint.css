@@ -1,26 +1,26 @@
-/* MintyFreshFluffy's Lore Document Stylesheet */
+/* Lore Document Stylesheet */
 body {
   background-color: #17201B;
-  color: #57FED2;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
+  color: #BEEAD3;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 11.5pt;
   /*overflow-x: hidden;*/
 }
 
-.separator {
-  border-color: #57FED2;
+/* .separator {
+  border-color: #BEEAD3;
   border-radius: 0;
   border-style: none none dashed none;
   border-width: 2px;
   margin-bottom: 6px;
-}
+} */
 
 .separator::after {
   content: "";
   width: inherit;
   display: block;
   padding: 3px;
-  border-color: #57FED2;
+  border-color: #BEEAD3;
   border-radius: 0;
   border-style: none none dashed none;
   border-width: 2px;
@@ -37,7 +37,7 @@ h1 {
   font-size: large;
   font-weight: normal;
   line-height: 2;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 h2 {
@@ -51,7 +51,6 @@ h2 {
 }
 
 p {
-  font-size: medium;
   margin-inline-start: 16px;
   margin-inline-end: 16px;
   white-space: pre-line;
@@ -73,7 +72,7 @@ a:link {
   
 /* visited link */
  a:visited {
-    color: #57FED2;
+    color: #BEEAD3;
 }
 
 pre {
@@ -161,11 +160,12 @@ header #topnav > a:hover {
 
 .flexbox-bar article,
 .flexbox article {
-  border-color: #57FED2;
+  border-color: #BEEAD3;
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   margin: 4px;
+  flex-grow: 1;
 }
 
 /*Remove excess border from text elements*/
@@ -193,9 +193,9 @@ header #topnav > a:hover {
 
 
 /* CRT Shader */
-body {
+/* body {
   text-shadow: 2px 0 1px rgba(0,30,255,0.5), -2px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-}
+} */
 
 body::before {
   content: " ";
@@ -228,7 +228,7 @@ body::after {
 
 /* Text Styles */
 .obfuscated {
-  text-shadow: 0 0 5px #57FED2, 0 0 5px #57FED2, 0 0 10px #57FED2, 0 0 10px #57FED2;
+  text-shadow: 0 0 5px #BEEAD3, 0 0 5px #BEEAD3, 0 0 10px #BEEAD3, 0 0 10px #BEEAD3;
   color: #FFFFFF00;
   /*z-index: 1;*/
   user-select: none;
@@ -236,7 +236,12 @@ body::after {
 
 .narrated {
   text-shadow: 0 0 5px #8f0000;
-  color: #fe5757;
+  color: #fe5757 !important;
+}
+
+.thirdparty {
+  /* text-shadow: 0 0 5px Orange; */
+  color: Orange !important;
 }
 
 .violent:hover {
@@ -252,7 +257,7 @@ body::after {
 .stat-sheet {
   float: left;
   padding: 8px;
-  border-color: #57FED2;
+  border-color: #BEEAD3;
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
@@ -266,16 +271,52 @@ body::after {
 .profile-img,
 img {
   padding: 8px;
-  border-color: #57FED2;
+  border-color: #BEEAD3;
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   margin: 8px;
   margin-right: 16px;
   width: fit-content;
+  max-width: 90%;
+  max-height: 500px;
 }
 
 .profile-img {
   /* float: left; */
   height: 270px;
+}
+
+.logo {
+  padding: 0px;
+  border-style: none;
+  margin: 0px;
+  margin-right: 4px;
+  width: 40px;
+  float:left;
+}
+
+figure {
+  padding: 8px;
+  border-color: #BEEAD3;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 8px;
+  margin-right: 16px;
+  width: fit-content;
+  max-width: 90%;
+  display: table;
+}
+
+figure figcaption {
+  contain: inline-size;
+}
+
+figure img {
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0px;
+  border-width: 0px;
+  padding: 0;
 }
