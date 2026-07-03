@@ -1,1 +1,0 @@
-document.title = file.name.charAt(0).toUpperCase() + name.replace(/\.[^/.]+$/, "").slice(1)
