@@ -292,6 +292,17 @@ body::after {
   width: fit-content;
 }
 
+.hanging-indent {
+  margin: 1em;
+  margin-top: 42px;
+}
+
+.hanging-indent p {
+  /* white-space: initial; */
+  text-indent: -6ch;
+  margin: 0 0 0 6ch;
+}
+
 
 /*Image Styles*/
 .profile-img,
